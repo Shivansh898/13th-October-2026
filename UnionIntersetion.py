@@ -1,0 +1,12 @@
+alpha = ("abcdef'-=;dtghijklmnopqrstuvwxyz")
+alpha1 = ("abcd86.;;efghijkl123543wxyz")
+set1 = set(alpha)
+set2 = set(alpha1)
+union = set1.union(set2)
+intersection = set1.intersection(set2)
+difference = union.difference(intersection)
+symmetric = union.symmetric_difference(intersection)
+print(difference)
+print(symmetric)
+if difference == symmetric:
+    print("They are equal!")
